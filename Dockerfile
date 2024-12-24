@@ -2,7 +2,7 @@
 FROM python:3.10
 
 # Set the working directory in the container
-WORKDIR /app
+#WORKDIR /app
 
 # Copy all files from the current directory to the /app directory in the container
 COPY requirements.txt requirements.txt
