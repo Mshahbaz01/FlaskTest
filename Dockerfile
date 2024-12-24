@@ -1,5 +1,5 @@
 # Use Python 3.10 as the base image
-FROM python:3.10-alpine
+FROM python:3.10
 
 # Set the working directory in the container
 #WORKDIR /app
@@ -15,7 +15,7 @@ RUN pip install -r requirements.txt
 
 
 # Set the environment variable for Flask
-# ENV FLASK_APP=app.py
+ENV FLASK_APP=app.py
 
 # Command to run the Flask app
 CMD ["flask", "run", "--host", "0.0.0.0"]
